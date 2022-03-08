@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220305234811">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220308214545">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,9 +52,9 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="slider">
-				<div class="slider__item">
-					<section data-fullscreen class="fullscreen">
+			<div class="swiper swiper-conteiner">
+				<div class="slider__item swiper-wrapper">
+					<section data-fullscreen class="fullscreen swiper-slide">
 						<div class="fullscreen__container box1">
 							<div class="fullscreen__imgbox">
 								<img class="fullscreen__img img1" src="img/1.png" alt="cube module" />
@@ -69,10 +69,40 @@
 								</a>
 							</div>
 						</div>
+					</section>
 
+					<section data-fullscreen class="fullscreen swiper-slide">
+						<div class="fullscreen__container box2">
+							<div class="fullscreen__imgbox">
+								<img class="fullscreen__img img2" src="img/2.jpg" alt="cube module" />
+							</div>
+							<div class="fullscreen__main">
+								<div class="fullscreen__text">Поэтапное внедрение системы, оптимизация ресурсов сети,
+									группировка и маскирование аварий
+								</div>
+								<a href="#benefits" class="fullscreen__button">
+									<p class="fullscreen__link">Подробнее</p>
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<section data-fullscreen class="fullscreen swiper-slide">
+						<div class="fullscreen__container box3">
+							<div class="fullscreen__imgbox">
+								<img class="fullscreen__img img3" src="img/3.png" alt="cube module" />
+							</div>
+							<div class="fullscreen__main">
+								<div class="fullscreen__text">Компоненты системы на основе кода российского происхождения или открытого кода
+								</div>
+								<a href="#def" class="fullscreen__button">
+									<p class="fullscreen__link">Подробнее</p>
+								</a>
+							</div>
+						</div>
 					</section>
 				</div>
-
+				<div class="swiper-pagination"></div>
 				<!--
    <div class="slider__item">
 <section class="fullscreen">
@@ -499,7 +529,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220305234811"></script>
+	<script src="js/app.min.js?_v=20220308214545"></script>
 </body>
 
 </html>
