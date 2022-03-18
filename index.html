@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220308214545">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220318154901">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +23,12 @@
 					<div class="content-header__menu menu-catalog">
 						<nav id="menu" class="menu-catalog__body">
 							<ul class="menu-catalog__list">
-								<li class="menu-catalog__item"><a data-goto=".func" href="#" class="menu-catalog__link">Функции</a></li>
-								<li class="menu-catalog__item"><a data-goto=".benefits" href="#" class="menu-catalog__link">Преимущества</a></li>
-								<li class="menu-catalog__item"><a data-goto=".specification" href="#" class="menu-catalog__link">Спецификация</a></li>
-								<li class="menu-catalog__item"><a data-goto=".usage" href="#" class="menu-catalog__link">Сценарии использования</a></li>
-								<li class="menu-catalog__item"><a data-goto=".architecture" href="#" class="menu-catalog__link">Архитектура</a></li>
-								<li class="menu-catalog__item"><a data-goto=".contact" href="#" class="menu-catalog__link">Контакты</a></li>
+								<li class="menu-catalog__item"><a data-goto=".func" href="#" class="menu-catalog__link lang" key="">Функции</a></li>
+								<li class="menu-catalog__item"><a data-goto=".benefits" href="#" class="menu-catalog__link lang" key="">Преимущества</a></li>
+								<li class="menu-catalog__item"><a data-goto=".specification" href="#" class="menu-catalog__link" key="">Спецификация</a></li>
+								<li class="menu-catalog__item"><a data-goto=".usage" href="#" class="menu-catalog__link lang" key="">Сценарии использования</a></li>
+								<li class="menu-catalog__item"><a data-goto=".architecture" href="#" class="menu-catalog__link lang" key="">Архитектура</a></li>
+								<li class="menu-catalog__item"><a data-goto=".footer" href="#" class="menu-catalog__link lang" key="">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -39,8 +39,8 @@
 						</button>
 						<nav class="languaje__body">
 							<ul class="languaje__list">
-								<li class="languaje__item"><a href="#" class="languaje__link">ru</a></li>
-								<li class="languaje__item"><a href="#" class="languaje__link">eng</a></li>
+								<li class="languaje__item"><a id="ru" href="#" class="languaje__link">ru</a></li>
+								<li class="languaje__item"><a id="eng" href="#" class="languaje__link">eng</a></li>
 							</ul>
 						</nav>
 
@@ -56,7 +56,7 @@
 				<div class="slider__item swiper-wrapper">
 					<section data-fullscreen class="fullscreen swiper-slide">
 						<div class="fullscreen__container box1">
-							<div class="fullscreen__imgbox">
+							<div class="fullscreen__imgbox imgbox1">
 								<img class="fullscreen__img img1" src="img/1.png" alt="cube module" />
 							</div>
 							<div class="fullscreen__main">
@@ -64,7 +64,7 @@
 								</div>
 								<div class="fullscreen__text">Модульная система управления сетями связи онлайн
 								</div>
-								<a href="#def" class="fullscreen__button">
+								<a href="#func" class="fullscreen__button">
 									<p class="fullscreen__link">Подробнее</p>
 								</a>
 							</div>
@@ -95,98 +95,39 @@
 							<div class="fullscreen__main">
 								<div class="fullscreen__text">Компоненты системы на основе кода российского происхождения или открытого кода
 								</div>
-								<a href="#def" class="fullscreen__button">
+								<a href="#architecture" class="fullscreen__button">
 									<p class="fullscreen__link">Подробнее</p>
 								</a>
 							</div>
 						</div>
 					</section>
 				</div>
+				<div class="swiper-button-prev"><img src="img/prev.svg" alt="button-prev" /></div>
+				<div class="swiper-button-next"><img src="img/next.svg" alt="button-next" /></div>
 				<div class="swiper-pagination"></div>
-				<!--
-   <div class="slider__item">
-<section class="fullscreen">
-   <div class="fullscreen__container-all">
-      <div class="fullscreen__container box2">
-         <div class="fullscreen__imgbox img2>
-            <img class="fullscreen__img" src="img/2.jpg" alt="
-            equipment"/>
-         </div>
-   
-   <div class="fullscreen__main">
-         <div class="fullscreen__text">
-            Поэтапное внедрение системы, оптимизация ресурсов сети,
-группировка и маскирование аварий
-         </div>
-   
-            <a href="#benefits" class="fullscreen__button">
-               <p class="fullscreen__link">Подробнее</p>
-            </a>
-   </div>
-</div>
-   </div> 
-</section>
-   </div>
-
-
-   <div class="slider__item">
-   <section class="fullscreen">
-      <div class="fullscreen__container-all">
-         <div class="fullscreen__container box3">
-            <div class="fullscreen__imgbox">
-               <img class="fullscreen__img img2 src="img/3.png" alt="laptop with code"/>
-            </div>
-      
-      <div class="fullscreen__main">
-         
-            <div class="fullscreen__text">
-               Компоненты системы на основе кода российского происхождения или открытого кода
-            </div>
-      
-               <a href="#architecture" class="fullscreen__button">
-                  <p class="fullscreen__link">Подробнее</p>
-               </a>
-      </div>
-      </div>
-   </div>
-      
-   </section>
-   
-   </div>
--->
 			</div>
 			<div class="definition"><a name="def"></a>
 				<div class="definition__conteiner">
-
 					<div class="definition__p">
-						<p>Система МУССОН предназначена для мониторинга сети,<br>
-							в иерархии ITU TMN реализует зонтичную систему управления NMS+
-							с поддержкой функционала четырех уровней модели FCAPS</p>
+						<p>Система МУССОН предназначена для мониторинга сети,<br>в иерархии ITU TMN реализует зонтичную систему управления NMS+ с поддержкой функционала четырех уровней модели FCAPS</p>
 					</div>
-
 					<div class="definition__block"></div>
 				</div>
 			</div>
-			<div class="func"><a name="func"></a>
+			<div class="func-top"><a name="func"></a></div>
+			<div class="func">
 				<div class="func__conteiner">
-
 					<div class="func__title section-title">
 						<p class="func__text">Функции системы</p>
 					</div>
 
 					<div class="funk__block">
 						<div data-spollers data-one-spoller class="block">
-
 							<div class="block__item">
-								<button tabindex="-1" type="button" data-spoller class="block__title">
-									<span1>FM</span1> <span>Fault management</span>
-								</button>
-
+								<button tabindex="-1" type="button" data-spoller class="block__title"><span class="span1">FM</span> <span>Fault management</span></button>
 								<div class="block__text">
-
 									<div class="block__text-title">Аварии, неисправности и события
 									</div>
-
 									<div class="block__text-content">
 										<ul>
 											<li>Непрерывный круглосуточный мониторинг состояния оборудования и услуг</li>
@@ -195,24 +136,17 @@
 											<li>Маскирование аварии на определённом оборудовании</li>
 											<li>Автоматический перезапрос сетевого элемента при наличии пропуска трапа</li>
 									</div>
-
 									<div class="block__text-img">
 										<img class="ibg" src="img/spollers_block/FM.png" alt="Fault management img">
 									</div>
 								</div>
 							</div>
 
-
 							<div class="block__item">
-								<button tabindex="-1" type="button" data-spoller class="block__title">
-									<span1>CM</span1> <span>Configuration management</span>
-								</button>
-
+								<button tabindex="-1" type="button" data-spoller class="block__title"><span class="span1">CM</span> <span>Configuration management</span></button>
 								<div class="block__text">
-
 									<div class="block__text-title">Конфигурация, настройки и состав оборудования
 									</div>
-
 									<div class="block__text-content">
 										<ul>
 											<li>Состав оборудования - для анализа необходимого ЗИП, возможности перемещения</li>
@@ -221,24 +155,17 @@
 											<li>Сбор данных по расписанию, по запросу оператора или по событиям на сетевом элементе</li>
 											<li>Контроль достоверности собранных данных – алгоритмы проверки и дозагрузки информируют администратора системы о проблемах с загрузкой</li>
 									</div>
-
 									<div class="block__text-img">
 										<img src="img/spollers_block/CM.png" alt="Configuration management img">
 									</div>
 								</div>
 							</div>
 
-
 							<div class="block__item">
-								<button tabindex="-1" type="button" data-spoller class="block__title">
-									<span1>PM</span1> <span>Performance management</span>
-								</button>
-
+								<button tabindex="-1" type="button" data-spoller class="block__title"><span class="span1">PM</span> <span>Performance management</span></button>
 								<div class="block__text">
-
 									<div class="block__text-title">Производительность и деградация работы оборудования
 									</div>
-
 									<div class="block__text-content">
 										<ul>
 											<li>Статистический анализ загруженности и качества работы сети</li>
@@ -248,126 +175,195 @@
 											<li>Онлайн измерения уровней в реальном времени на проблемном участке</li>
 											<li>Качества связи между системой (в операторском облаке) и оборудованием региона</li>
 									</div>
-
 									<div class="block__text-img">
 										<img src="img/spollers_block/PM.png" alt="Performance management img">
 									</div>
 								</div>
 							</div>
 
-
 							<div class="block__item">
-								<button tabindex="-1" type="button" data-spoller class="block__title">
-									<span1>SM</span1> <span>Security Management
-									</span>
-								</button>
-
+								<button tabindex="-1" type="button" data-spoller class="block__title"><span class="span1">SM</span> <span>Security Management
+									</span></button>
 								<div class="block__text">
-
 									<div class="block__text-title">Управление безопасностью
 									</div>
-
 									<div class="block__text-content">
 										<ul>
-											<li> </li>
-											<li> </li>
+											<li>Управление сетевой аутентификацией, авторизацией</li>
+											<li>Аудит</li>
 										</ul>
 									</div>
-
 									<div class="block__text-img">
 										<img src="img/spollers_block/PM.png" alt="Security Management img">
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="benefits"> <a name="benefits"></a>
+			<div class="benefits-top"><a name="benefits"></a></div>
+			<div class="benefits">
 				<div class="benefits__conteiner">
 					<div class="benefits__title section-title">
 						<p class="benefit__text">Преимущества</p>
 					</div>
 				</div>
 
-				<div class="benefits__conteiner-content">
+				<div class="benefits-frugment swiper-conteiner">
+					<div class="benefits__conteiner-content swiper-wrapper">
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/1.svg" alt="icon1" />
+						<div class="benefits__width swiper-slide">
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/1.svg" alt="icon1" />
+								</div>
+								<div class="benefits__text">
+									<p>Единая мультивендорная мультиобъектная система</p>
+								</div>
+							</div>
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/2.svg" alt="icon2" />
+								</div>
+								<div class="benefits__text">
+									<p>Компоненты системы на основе кода российского происхождения или открытого кода</p>
+								</div>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Единая мультивендорная мультиобъектная системаа</p>
+
+						<div class="benefits__width swiper-slide">
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/3.svg" alt="icon3" />
+								</div>
+								<div class="benefits__text">
+									<p>Возможен сбор данных с сетевого элемента, а не только с системы управления вендора</p>
+								</div>
+							</div>
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/4.svg" alt="icon4" />
+								</div>
+								<div class="benefits__text">
+									<p>Интеграция оборудования на основе проприетарных API и протоколов</p>
+								</div>
+							</div>
 						</div>
+
+						<div class="benefits__width swiper-slide">
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/5.svg" alt="icon5" />
+								</div>
+								<div class="benefits__text">
+									<p>Определение проблемных мест на сети</p>
+								</div>
+							</div>
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/6.svg" alt="icon6" />
+								</div>
+								<div class="benefits__text">
+									<p>Оптимизация ресурсов сети</p>
+								</div>
+							</div>
+
+							<div class="benefits__content">
+								<div class="benefits__icon">
+									<img src="img/icons/7.svg" alt="icon7" />
+								</div>
+								<div class="benefits__text">
+									<p>Оптимизация расходов, поддержка оператора в автоматизации работы с данными</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
+					<div class="swiper-pagination1"></div>
+				</div>
 
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/2.svg" alt="icon2" />
+				<div class="conteiner-content1">
+					<div class="benefits__conteiner-content conteiner-content2">
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/1.svg" alt="icon1" />
+							</div>
+							<div class="benefits__text">
+								<p>Единая мультивендорная мультиобъектная система</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Компоненты системы на основе кода российского происхождения или открытого кода</p>
-						</div>
-					</div>
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/3.svg" alt="icon3" />
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/2.svg" alt="icon2" />
+							</div>
+							<div class="benefits__text">
+								<p>Компоненты системы на основе кода российского происхождения или открытого кода</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Возможен сбор данных с сетевого элемента, а не только с системы управления вендора</p>
-						</div>
-					</div>
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/4.svg" alt="icon4" />
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/3.svg" alt="icon3" />
+							</div>
+							<div class="benefits__text">
+								<p>Возможен сбор данных с сетевого элемента, а не только с системы управления вендора</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Интеграция оборудования на основе проприетарных API и протоколов</p>
-						</div>
-					</div>
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/5.svg" alt="icon5" />
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/4.svg" alt="icon4" />
+							</div>
+							<div class="benefits__text">
+								<p>Интеграция оборудования на основе проприетарных API и протоколов</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Определение проблемных мест на сети</p>
-						</div>
-					</div>
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/6.svg" alt="icon6" />
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/5.svg" alt="icon5" />
+							</div>
+							<div class="benefits__text">
+								<p>Определение проблемных мест на сети</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Оптимизация ресурсов сети</p>
-						</div>
-					</div>
 
-					<div class="benefits__content">
-						<div class="benefits__icon">
-							<img src="img/icons/7.svg" alt="icon7" />
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/6.svg" alt="icon6" />
+							</div>
+							<div class="benefits__text">
+								<p>Оптимизация ресурсов сети</p>
+							</div>
 						</div>
-						<div class="benefits__text">
-							<p>Оптимизация расходов, поддержка оператора в автоматизации работы с данными</p>
+
+						<div class="benefits__content">
+							<div class="benefits__icon">
+								<img src="img/icons/7.svg" alt="icon7" />
+							</div>
+							<div class="benefits__text">
+								<p>Оптимизация расходов, поддержка оператора в автоматизации работы с данными</p>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 			<div class="specification"><a name="specification"></a>
 				<div class="specification__conteiner">
 					<div class="specification__conteiner-content">
-
 						<div class="specification__title section-title spec">
 							<p class="specification__text">Спецификация системы</p>
 						</div>
-
 						<div class="specification__content">
-
 							<div class="specification__li">
 								<ul>
 									<li>Поддержка SNMP(v1, v2c, v3), FTP, SSH, NetConf</li>
@@ -379,13 +375,11 @@
 									<li>Поиск элементов по сегменту сети (Auto-Discovery)</li>
 									<li>Определение топологии сети, отображение на схеме сети</li>
 									<li>Геопривязка объектов на карте</li>
-							</div>
-
-							<div class="specification__block">
+								</ul>
 							</div>
 						</div>
-
 					</div>
+					<div class="specification__block"></div>
 				</div>
 			</div>
 			<div class="usage"><a name="usage"></a>
@@ -436,7 +430,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="architecture"><a name="architecture"></a>
+			<div class="architecture-top"><a name="architecture"></a></div>
+			<div class="architecture">
 				<div class="architecture__conteiner">
 
 					<div class="architecture__title section-title">
@@ -444,10 +439,17 @@
 					</div>
 					<div class="architecture__conteiner-content">
 						<div class="architecture__content">
-							<div class="architecture__img">
-								<a class="architecture__a" href="#"><img src="img/Arch.png" </a>
+							<div id="popup" class="architecture__img popup">
+								<div class="popup__body">
+									<div class="popup__content">
+										<a href="#" id="open_popup" class="architecture__button data-popup">
+											<img src="img/Arch.png" />
+										</a>
+									</div>
+									<a href="" class="data-close"></a>
+								</div>
 							</div>
-							<div class="architecture__text t">
+							<div class="architecture__text p">
 								<p>Платформа построена на базе современных систем разработки ПО
 									с открытым кодом, таких как RabbitMQ, PostgreSQL, Timescale DB, Clickhouse.</p>
 								<p>В архитектуру заложена реализация отказоустойчивости, кластеризации, горизонтального и
@@ -459,21 +461,26 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer">
+		<footer class="footer"><a name="footer"></a>
 			<div class="footer__body-top">
 				<div class="footer__container container">
 					<div class="footer__body">
-						<div class="footer__element">
+						<div data-da=".footer__body-bottom,768,0" class="footer__element element1">
 							<div class="footer__content content-footer">
 								<div class="content-footer__title">
-									<a href="#main" class="content-footer__logo -ibg">
+									<a href="#" class="content-footer__logo -ibg">
 										<img src="img/icons/logo-whight.svg" alt="logo" />
 									</a>
 								</div>
 								<div class="content-footer__subtitle">
-									<ul class="content-footer__list">
+									<ul class="content-footer__list element1">
 										<li class="content-footer__item">Модульная система управления сетями связи онлайн</li>
-										<li class="content-footer__item"><a href="#" class="content-footer__link"> <img src="img/icons/pdf.svg" alt="pdf-icon" /> <span>Скачать презентацию</span></a></li>
+										<li data-da=".block-,768,1" class="content-footer__item link">
+											<a href="#" class="content-footer__link">
+												<dev class="content-footer__icon"><img src="img/icons/pdf.svg" alt="pdf-icon" /></dev>
+												<span class="content-footer__active">Скачать презентацию</span>
+											</a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -483,27 +490,31 @@
 								<div class="content-footer__title big">Контакты</div>
 								<div class="content-footer__subtitle">
 									<ul class="content-footer__list">
-										<li class="content-footer__item">Санкт-Петербург...</li>
 										<li class="content-footer__item">
+											<p>Адрес: 105005 Россия, г.Москва, Аптекарский пер., д. 4, стр. 1, пом. 143</p>
+											<!--<p>105005, Россия, Москва, а/я 26</p>-->
+										</li>
+										<li class="content-footer__item link">
 											<a href="#" class="content-footer__link">
-												<img src="img/icons/phone.svg" alt="phone-icon" />
-												<a class="tel" href="tel:79999999999">+7 (999) 999-99-99</a>
+												<dev class="content-footer__icon"><img src="img/icons/phone.svg" alt="phone-icon" /></dev>
+												<a class="tel content-footer__active" href="tel:74951960008">+7 (495) 196-00-08</a>
 											</a>
 										</li>
-										<li class="content-footer__item">
+										<li class="content-footer__item link">
 											<a href="#" class="content-footer__link">
-												<img src="img/icons/mail.svg" alt="mail-icon" />
-												<a class="mail" href="mailto:musson@bk.ru">musson@bk.ru</a>
+												<dev class="content-footer__icon"><img src="img/icons/mail.svg" alt="mail-icon" /></dev>
+												<a class="mail content-footer__active" href="mailto:musson@ntcpp.ru">musson@ntcpp.ru</a>
 											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="footer__element">
+						<div class="footer__element block-">
 							<div class="footer__content content-footer">
-								<div class="content-footer__title connect"><a href="#">Связаться с нами</a></div>
-								<div class="content-footer__subtitle"> </div>
+								<div class="content-footer__title connect">
+									<a href="mailto:musson@ntcpp.ru">Связаться с нами</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -511,8 +522,8 @@
 			</div>
 			<div class="footer__body-bottom">
 				<div class="footer__bottom-p">
-					<p>Политика обработки персональных данных</p>
-					<p>© 2022 Муссон</p>
+					<!--<p>Политика обработки персональных данных</p>-->
+					<p>© ООО «НТЦ ПП» 2022</p>
 				</div>
 			</div>
 		</footer>
@@ -529,7 +540,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220308214545"></script>
+	<script src="js/app.min.js?_v=20220318154901"></script>
 </body>
 
 </html>
